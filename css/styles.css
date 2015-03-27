@@ -1,0 +1,460 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('../img/pattern.png') repeat;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	padding: 2em;
+	background: white;
+	border-bottom: 5px solid #C6D8D3;
+}
+
+header img {
+	display: block;
+	margin: 2em auto;
+}
+
+footer, .saludo-encuesta {
+	background: #fff;
+}
+
+footer {
+	padding: 1em;
+	text-align: center;
+	margin-top: 6em !important;
+	border-top: 5px solid #C6D8D3; 
+}
+
+	footer h6 {
+		font-size: 1.2em;
+		color: #3A3335;
+	}
+
+	footer p {
+		color: #3A3335;
+	}
+
+	footer span {
+		text-transform: uppercase;
+		color: #3A3335;
+	}
+
+.slogan-footer {
+	font-weight: bold;
+}
+.slogan-footer:after {
+	content: '\f00c';
+	margin-left: 5px;
+	font-family: fontAwesome;
+}
+
+/* CLASES AUXILIARES */
+
+.titulo {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.parrafo {
+	font-size: 1.1em;
+	color: #333;
+}
+
+.centrado {
+	text-align: center !important;
+	font-size: 1.2em !important;
+}
+
+.logo {
+	max-width: 100%;
+}
+
+
+
+/************************************
+	 PAGINA: INICIO MENU PRINCIPAL  
+************************************/
+
+#mainMenu {
+	width: 100%;
+	margin: 4em auto 6em;
+	text-align: center;
+}
+
+#mainMenu h2 {
+	color: #3C1518;
+	text-transform: uppercase;
+	border-bottom: 1px solid silver;
+}
+
+#mainMenu ul {
+	list-style: none;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#mainMenu ul li {
+	display: inline-block;
+	background: #e74c3c;
+}
+
+#mainMenu ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	border-bottom: 5px solid #c0392b;
+}
+
+#mainMenu ul li a:hover {
+	background: #c0392b;
+}
+
+/************************************
+	 PAGINA: LOGIN  
+************************************/
+
+
+#loginForm {
+	text-align: center;
+	text-transform: uppercase;
+	background: #C6D8D3;
+	margin: 8em auto;
+	padding: 2em;
+}
+
+#loginForm table {
+	width: 50%;
+	margin: 0 auto;
+	background: white;
+}
+
+#loginForm table tr:first-child {
+	border-bottom: 1px solid #ecf0f1;
+	text-align: left;
+}
+
+#loginForm table th {
+	text-align: center;
+	border-style: none;
+	vertical-align: middle;
+}
+
+#loginForm table td {
+	border-style: none;
+}
+
+
+/************************************
+	 PAGINA: ENCUESTA  
+************************************/
+.icon-container {
+	font-size: 5em;
+	color: white;
+	background: white;
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	padding: 10px;
+	border-radius: 999px;
+	text-align: center;
+}
+
+.fa-briefcase, .fa-check {
+	color: #3A3335;
+}
+
+.saludo-encuesta {
+	padding: 2em;
+	margin: 4em 0;
+	border-bottom: 5px solid #C6D8D3;
+	border-top: 5px solid #C6D8D3;
+
+}
+
+	.titulo {
+		color: #3A3335;
+	}
+
+	.saludo-encuesta p {
+		color: #3A3335;
+		font-size: 1.1em;
+		font-weight: normal;
+		text-align: justify;
+	}
+
+.contenedor-saludo {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#contenedor-encuesta {
+	margin: 1em 0;
+	background: white;
+	border: 1px solid silver;
+}
+
+.each {
+	padding: 1em;
+}
+
+.form-encuesta input[type="text"], .form-encuesta input[type="email"]  {
+	border-radius: 0;
+}
+
+
+.form-encuesta textarea {
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 0;
+}
+
+.form-encuesta select {
+	margin: 0 auto;
+	width: 100px;
+	height: 70px;
+	padding: 1em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+	.form-encuesta p {
+		font-size: 1.4em;
+		margin: 2em 0;
+		color: #333;
+	}
+
+	.form-encuesta fieldset {
+		margin-bottom: 1em;
+	}
+
+	.form-encuesta legend {
+		background: #e74c3c;
+		padding: 1em;
+		font-size: 1.6em;
+		color: white;
+		text-transform: uppercase;
+		font-weight: bold;
+		border-bottom: 5px solid #c0392b;
+		text-align: center;
+	}
+
+.custom-radio {
+	width: 25px;
+	height: 25px;
+	text-align: center;
+}
+
+.r-group {
+	text-align: center;
+}
+
+.r-group input[type="radio"] {
+	margin-right: 1em;
+}
+
+.r-group label {
+	font-size: 1.5em;
+	margin-right: 1em;
+}
+
+.no {
+	display: block;
+	float: left;
+	margin-right: 15px;
+	font-size: 1.4em;
+	text-align: center;
+	background: red;
+	width: 35px;
+	height: 35px;
+	border-radius: 999px;
+	color: white;
+	font-weight: bold;
+}
+
+#tableAtributos {
+	width: 50%;
+	margin: 0 auto;
+}
+
+	#tableAtributos th {
+		text-align: center;
+		background: gray;
+		color: white;
+		font-size: 1.3em;
+		text-transform: uppercase;
+	}
+
+	#tableAtributos td:first-child {
+		font-size: 1.2em;
+		vertical-align: middle;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	#tableAtributos td:nth-child(2) {
+		text-align: center;
+	}
+
+.btn-custom {
+	position: relative;
+	display: block;
+	border-radius: 0;
+	padding: 1em;
+	margin:  1em auto;
+	background: #e74c3c;
+	border-bottom: 5px solid #c0392b;
+	font-size: 1.2em;
+	color: white;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.btn-custom:hover {
+	background: #c0392b;
+	color: #ccc;
+}
+
+.btn-login {
+	border: none;
+	padding: .5em 1em;
+	background: #C6D8D3;
+	color: white;
+}
+
+.btn-login:hover {
+	background: #6B5E62;
+}
+
+/************************************
+	 PAGINA: ENVIO EXITOSO  
+************************************/
+
+.envio-exitoso {
+	background: #c0392b;
+	width: 75%;
+	text-align: center;
+	color: white;
+	padding: 4em 2em;
+	margin: 8em auto;
+}
+
+	.envio-exitoso h1 {
+		text-transform: uppercase;
+	}
+
+	.envio-exitoso p {
+		text-align: center;
+	}
+
+.envio-encuesta {
+	background: #fff;
+	border-top: 5px solid #C6D8D3;
+	border-bottom: 5px solid #C6D8D3;
+	margin: 4em 0;
+	padding: 2em;
+	text-align: center;
+	width: 100%;
+}
+
+	.envio-encuesta ul {
+		margin: 0 auto;
+		width: 50%;
+		list-style: none;
+	}
+
+	.envio-encuesta ul li {
+		font-weight: bold;
+	}
+
+	.back-btn {
+		display: inline-block;
+		margin: 1em 0;
+		padding: 1em;
+		background: #C6D8D3;
+		color: #6B5E62;
+		text-decoration: none;
+	}
+
+		.back-btn:hover {
+			text-decoration: none;
+			background: #6B5E62;
+			color: #fff;
+		}
+
+
+/************************************
+**************** FOOTER  
+************************************/
+.site-info a {
+	display: block;
+	width: 200px;
+	margin: 5px auto;
+	padding: 1em;
+	color: #3A3335;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.site-info a:hover {
+	background: #e74c3c;
+	color: #fff;
+}
+
+.site-info span {
+	font-size: .7em;
+	color: #3A3335;
+}
+
+/************************************
+**************** PAGINA: CONSULTA GENERAL  
+************************************/
+.table-general, .table-detalle, .table-info-cliente {
+	background: white;
+}
+
+.table-info-cliente th, .table-detalle th, .table-general th {
+	background: silver;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.table-info-cliente {
+	margin-top: 2em;
+}
+
+.table-detalle {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.table-detalle td:first-child {
+	width: 35%;
+}
+
+.table-detalle td:nth-child(2) {
+	text-align: center;
+	font-weight: bold;
+}
+
+.table-titles {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	border-bottom: 1px solid silver;
+}
+
+.table-general th, .table-detalle th, .table-info-cliente th {
+	background: #c0392b;
+	color: #fff;
+}
