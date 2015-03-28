@@ -72,6 +72,11 @@ include('.././includes/header.php');
 
 	<header>
 		<img src="../img/logotipo-fafaci.jpg" class="logo" alt="logotipo-fafaci-servicios-industriales">
+		<ul>
+			<li>Servicios Industriales Fafaci S.A. de C.V.</li>
+			<li>(871) 169 81 09 – (871) 169 80 24</li>
+			<li>Carr. Estatal ‘La Perla’ S/N Col. La Perla Cp. 27090, Torreón, Coah. México.</li>
+		</ul>
 	</header>
 
 			<?php 
