@@ -13,14 +13,10 @@ include('.././includes/header.php'); ?>
 	
 		
 
-		<form action="../validar_usuario.php" method="post">
+		<form action="validar_usuario.php" method="post">
 	
 			 <table class="table table-condensed table-responsive table-bordered">
-			 	<tr>
-			 		<td colspan="3">
-			 			<a class="back-btn" href="../"> <i class="fa fa-arrow-left"></i> Volver</a>
-			 		</td>
-			 	</tr>
+
 			  <tr>
 			   	<th><label for="admin">Usuario</label></th>
 				<th><label for="password_usuario">Contraseña</label></th>

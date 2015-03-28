@@ -1,5 +1,5 @@
 <?php
-include('includes/conexion.php');
+include('.././includes/conexion.php');
  
 /*caturamos nuestros datos que fueron enviados desde el formulario mediante el metodo POST
 **y los almacenamos en variables.*/
@@ -21,8 +21,8 @@ if($row = mysql_fetch_array($result))
   session_start();  
   //Almacenamos el nombre de usuario en una variable de sesión usuario
   $_SESSION['usuario'] = $usuario;  
-  //Redireccionamos a la pagina: cgeneral.php
-  header("Location: consulta/");  
+  //Redireccionamos a la pagina: MENU PRINCIPAL
+  header("Location: ../");  
  }
  else
  {
@@ -30,7 +30,7 @@ if($row = mysql_fetch_array($result))
   ?>
    <script languaje="javascript">
     alert("Contraseña Incorrecta");
-    location.href = "login/";
+    location.href = "index.php";
    </script>
   <?
             
@@ -42,7 +42,7 @@ else
 ?>
  <script languaje="javascript">
   alert ("El nombre de usuario es incorrecto!");
-  location.href = "login/";
+  location.href = "index.php";
  </script>
 <?   
         

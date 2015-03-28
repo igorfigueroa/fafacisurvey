@@ -82,7 +82,7 @@ $mail->Username = "igor.figueroa@transmana.com";
 $mail->Password = "igor1322";
 
 $mail->From = "igor.figueroa@transmana.com";
-  $mail->FromName = "RH FAFACI";
+  $mail->FromName = "CALIDAD FAFACI";
   $mail->Subject = "SOLICITUD DE LLENADO DE ENCUESTA DE SATISFACCIÓN DEL CLIENTE";
   $mail->AltBody = "";
   $mail->MsgHTML($body);

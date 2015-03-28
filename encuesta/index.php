@@ -76,7 +76,7 @@ include('.././includes/header.php');
 
 			<?php 
 				if (isset($_GET['status']) AND $_GET['status'] == 'enviado') {
-					echo '<div class="envio-exitoso">';
+					echo '<div class="envio-encuesta">';
 						echo '<div class="icon-container">
 								<i class="fa fa-check"></i>
 							</div>';
@@ -85,7 +85,7 @@ include('.././includes/header.php');
 						esta encuesta; con sus respuestas nos ayudara a mejorar
 						los servicios y productos que nuestra Empresa ofrece actualmente. ¡Muchas Gracias!</p>';
 
-						echo '<a class="btn btn-warning" href="#">Volver a Página Principal</a>';
+						echo '<a class="back-btn" href="http://www.fafaci.com.mx">Visitar Página Principal</a>';
 					echo '</div>';
 					
 				} else { 

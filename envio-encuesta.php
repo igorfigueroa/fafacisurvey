@@ -11,7 +11,7 @@
 
 
 		<div class="envio-encuesta">
-			<h1>ENVIADO!</h1>
+			<h1>¡ENVIADO!</h1>
 			<p>Se ha enviado con éxito la encuesta de satisfacción de cliente al correo electrónico especificado: </p>
 			<ul>
 				<li>

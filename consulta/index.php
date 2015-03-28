@@ -23,16 +23,19 @@ include('../includes/header.php');
 </header>
 
 <div id="mainMenu">
-			<ul>
-				<li><a href="../"><i class="fa fa-arrow-left"></i> Volver a Menu Principal</a></li>
-				<li><a href="../encuesta/"><i class="fa fa-file"></i> Ir a Encuesta</a></li>
-				<li><a href="../logout.php"><i class="fa fa-remove"></i> Cerrar Sesión</a></li>
-			</ul>
+
+					<ul>
+						<li>
+							<a class="" href="../"><i class="fa fa-arrow-left"></i> Volver a Menu Principal</a>
+						</li>
+					</ul>
+
 </div>
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
+			<h2 class="table-titles">CONSULTA GENERAL</h2>
 			<div id="consultaGral">
 				<table class="table table-condensed table-responsive table-bordered table-general">
 					<thead>

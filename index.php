@@ -1,4 +1,13 @@
 ﻿<?php 
+//creamos la sesion
+session_start();
+//validamos si se ha hecho o no el inicio de sesion correctamente
+//si no se ha hecho la sesion nos regresará a login.php
+if(!isset($_SESSION['usuario'])) 
+{
+  header('Location: login/'); 
+  exit();
+}
 
 $pagina = "inicio";
 $pageTitle = "Menu Principal";
@@ -26,7 +35,9 @@ $cssPath = 'css/style.css';
 					<a class="" href="consulta/"><i class="fa fa-search"></i> Consulta General</a></li>
 				</li>
 
-
+				<li>
+					<a href="login/logout.php"><i class="fa fa-remove"></i> Cerrar Sesión</a>
+				</li>
 			</ul>
 
 		</div>
