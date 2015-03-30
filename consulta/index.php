@@ -9,17 +9,10 @@ if(!isset($_SESSION['usuario']))
   exit();
 }
 
-
 $pageTitle = "Consulta General";
 $pagina = "";
 include('../includes/conexion.php');
 include('../includes/header.php');
-	/*
-	for ($x = 0; $x < 45; $x++) {
-		$insertar = mysql_query("INSERT INTO cte_encuesta VALUES ('', '1', '2015-03-14 10:12:42', 'Igor Figueroa', 'GOKU', 'PROYECTO PRUEBA', 'igor.figueroa@com.mx')")
-		or die (mysql_error());
-	}
-	*/
 
 $contador = mysql_query("SELECT COUNT(*) as total FROM cte_encuesta") or die("hubo un error en el contador");
 $c = mysql_fetch_array($contador);
