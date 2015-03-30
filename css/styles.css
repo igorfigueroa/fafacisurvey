@@ -483,6 +483,7 @@ footer {
 .table-titles {
 	text-align: center;
 	text-transform: uppercase;
+	margin-top: -2em;
 	margin-bottom: 1em;
 	border-bottom: 1px solid silver;
 }
@@ -491,3 +492,26 @@ footer {
 	background: #c0392b;
 	color: #fff;
 }
+
+.consulta-pag {
+	list-style: none;
+	text-align: right;
+}
+
+	.consulta-pag li {
+		display: inline-block;
+		background: silver;
+		margin-right: 1px;
+	}
+
+	.consulta-pag li:nth-child(1) {
+		font-size: 1em;
+		color: gray;
+		background: none;
+	}
+
+	.consulta-pag li a {
+		display: block;
+		padding: 1em;
+		color: #fff;
+	}
