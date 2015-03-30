@@ -17,12 +17,7 @@ include('../includes/header.php');
 $id = $_GET['id'];
 
  ?>
-
  
-	 <header>
-		<img src="../img/logotipo-fafaci.jpg" alt="logotipo-fafaci-servicios-industriales">
-	</header>
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
