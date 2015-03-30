@@ -70,35 +70,34 @@
     </div>
     ';
 
-$mail = new PHPMailer();
-$mail->IsSMTP();
-//Ver Errores PHPMAILER al Enviar
-//$mail->SMTPDebug  = 2;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = ""; //ssl//
-$mail->Host = "smtp.1and1.com";
-$mail->Port = 587;
-$mail->Username = "igor.figueroa@transmana.com";
-$mail->Password = "igor1322";
+  $mail = new PHPMailer();
+  $mail->IsSMTP();
+  //Ver Errores PHPMAILER al Enviar
+  //$mail->SMTPDebug  = 2;
+  $mail->SMTPAuth = true;
+  $mail->SMTPSecure = ""; //ssl//
+  $mail->Host = "smtp.1and1.com";
+  $mail->Port = 587;
+  $mail->Username = "igor.figueroa@transmana.com";
+  $mail->Password = "igor1322";
 
-$mail->From = "igor.figueroa@transmana.com";
-  $mail->FromName = "CALIDAD FAFACI";
-  $mail->Subject = "SOLICITUD DE LLENADO DE ENCUESTA DE SATISFACCIÓN DEL CLIENTE";
-  $mail->AltBody = "";
-  $mail->MsgHTML($body);
+  $mail->From = "igor.figueroa@transmana.com";
+    $mail->FromName = "CALIDAD FAFACI";
+    $mail->Subject = "SOLICITUD DE LLENADO DE ENCUESTA DE SATISFACCIÓN DEL CLIENTE";
+    $mail->AltBody = "";
+    $mail->MsgHTML($body);
 
-$mail->AddAddress($dest, "Igor Figueroa");
+  $mail->AddAddress($dest, "Igor Figueroa");
 
-$mail->IsHTML(true);
-$mail->CharSet = 'UTF-8';
+  $mail->IsHTML(true);
+  $mail->CharSet = 'UTF-8';
 
-if ($mail->Send()) {
-  header("Location: ./envio-encuesta.php?status=ok&dest=".$dest);
-}
+    if ($mail->Send()) {
+      header("Location: ./envio-encuesta.php?status=ok&dest=".$dest);
+    }
 
 }
 ?>
-
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -15,10 +15,6 @@ include('includes/header.php');
 $cssPath = 'css/style.css';
 ?>
 
-	<header>
-		<img src="img/logotipo-fafaci.jpg" alt="logotipo-fafaci-servicios-industriales">
-	</header>
-
 		<div id="mainMenu">
 			<h2>Menu Principal</h2>
 

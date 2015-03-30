@@ -5,10 +5,6 @@
 	include('includes/header.php');
 	$cssPath = 'css/style.css';
 ?>
-		<header>
-			<img src="img/logotipo-fafaci.jpg" alt="logotipo-fafaci-servicios-industriales">
-		</header>
-
 
 		<div class="envio-encuesta">
 			<h1>¡ENVIADO!</h1>

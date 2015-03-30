@@ -17,11 +17,6 @@ include('../includes/header.php');
 
  ?>
 
- 
- <header>
-	<img src="../img/logotipo-fafaci.jpg" alt="logotipo-fafaci-servicios-industriales">
-</header>
-
 <div id="mainMenu">
 
 					<ul>
@@ -62,7 +57,7 @@ include('../includes/header.php');
 									<td>'.$vistaEncuestas['cte_empresa'].'</td>
 									<td>'.$vistaEncuestas['cte_pedido'].'</td>
 									<td>'.$vistaEncuestas['cte_email'].'</td>
-									<td><a href="respuestas.php?id='.$vistaEncuestas['id'].'"><i class="fa fa-eye fa-lg"></i> Ver Respuestas</a></td>
+									<td style="text-align: center;"><a href="respuestas.php?id='.$vistaEncuestas['id'].'"><i class="fa fa-eye fa-lg"></i></a></td>
 								</tr>';
 						}
 						?>
