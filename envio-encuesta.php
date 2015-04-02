@@ -2,8 +2,8 @@
 	$dest = $_GET['dest'];
 	$pagina = "inicio";
 	$pageTitle = "Menu Principal";
-	include('includes/header.php');
 	$cssPath = 'css/style.css';
+	include('includes/header.php');
 ?>
 
 		<div class="envio-encuesta">

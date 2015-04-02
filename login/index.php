@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 $pagina = "";
 $pageTitle = "Iniciar Sesión";
-include('.././includes/header.php'); ?>	
+include('.././includes/header.php'); ?>
 
 	<div id="loginForm">	
 

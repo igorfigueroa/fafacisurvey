@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 $pagina = "encuesta";
 date_default_timezone_set('America/Mexico_City');
 $error = "";
@@ -38,28 +38,19 @@ if ($_POST) {
 			INSERT INTO cte_encuesta VALUES ('', '$id_encuesta', '$fecha', '$cliente', '$empresa', '$pedido', '$email')
 			") or die(mysql_error());
 
-				if($insertarRespuestasEncuesta) {
-					echo "<h1>Insercion exitosa!</h1>";
-				} else {
-					echo "<h1>Hubo un error!</h1>";
-				}
-
 				$ultimaEncuesta = mysql_query("SELECT id from cte_encuesta ORDER BY id DESC LIMIT 1") or die(mysql_error());
 				$ultimaId = mysql_fetch_array($ultimaEncuesta);
 				$lastId = $ultimaId['id'];
 
-				echo '<h1>'.$lastId.'</h1>';
-				var_dump($q);
+				$a = 1;
 
-			$a = 1;
+				foreach($q as $item) {
+					$insertarCalificaciones = mysql_query("INSERT INTO detalle_cte_encuesta VALUES ('$lastId', $a, '$item')");
+					$a = $a + 1;
+				}
 
-			foreach($q as $item) {
-				$insertarCalificaciones = mysql_query("INSERT INTO detalle_cte_encuesta VALUES ('$lastId', $a, '$item')");
-				$a = $a + 1;
-			}
-
-			header("Location: .././encuesta/index.php?status=enviado");
-			exit;
+				header("Location: .././encuesta/index.php?status=enviado");
+				exit;
 }
 
 ?>
@@ -67,7 +58,6 @@ if ($_POST) {
 <?php 
 $pageTitle = "Encuesta de Satisfacción de Cliente";
 include('.././includes/header.php');
-
 ?>
 
 			<?php 

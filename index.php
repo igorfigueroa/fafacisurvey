@@ -1,4 +1,4 @@
-﻿<?php 
+<?php
 //creamos la sesion
 session_start();
 //validamos si se ha hecho o no el inicio de sesion correctamente
@@ -11,8 +11,9 @@ if(!isset($_SESSION['usuario']))
 
 $pagina = "inicio";
 $pageTitle = "Menu Principal";
+$cssPath = "css/style.css";
+include('includes/modal-envio.php');
 include('includes/header.php');
-$cssPath = 'css/style.css';
 ?>
 
 		<div id="mainMenu">
@@ -35,10 +36,8 @@ $cssPath = 'css/style.css';
 					<a href="login/logout.php"><i class="fa fa-remove"></i> Cerrar Sesión</a>
 				</li>
 			</ul>
-
 		</div>
 		
 <?php
-include('includes/modal-envio.php');
 include('includes/footer.php');
 ?>
