@@ -516,3 +516,16 @@ footer {
 		padding: 1em;
 		color: #fff;
 	}
+
+/* BOTONES */
+
+.icon-round {
+			display: block;
+			border-radius: 50%;
+			background: gray;
+			color: white;
+			width: 6.25em;
+			margin: 1em auto;
+			padding: .5em;
+			opacity: .6;
+}

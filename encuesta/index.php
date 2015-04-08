@@ -79,11 +79,9 @@ include('.././includes/header.php');
 
 		<div class="saludo-encuesta">
 			<div class="contenedor-saludo">
-				<!--
-					<div class="icon-container">
-						<i class="fa fa-briefcase"></i>
-					</div>
-				-->
+				
+				<img class="icon-round" src="../img/file-icon.png" alt="icono encuesta fafaci">
+				
 				<h1 class="titulo">Encuesta de Satisfacción de Cliente</h1>
 				<p>Estimado cliente, con el proposito de mejorar nuestro servicio y productos nos dirigimos a usted de la manera más atenta solicitando su apoyo para el llenado
 				del siguiente formulario, mismo que no le tomara más de 3 minutos de su tiempo.</p>
